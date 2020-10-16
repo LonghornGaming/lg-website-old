@@ -19,6 +19,10 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join('react-app/build')));
 
+app.use((req, res, next) => {
+  res.sendFile(path.join('react-app/build', 'index.html'));
+});
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
