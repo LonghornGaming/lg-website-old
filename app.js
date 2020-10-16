@@ -20,7 +20,7 @@ app.use(cookieParser());
 app.use(express.static(path.join('react-app/build')));
 
 app.use((req, res, next) => {
-  res.sendFile(path.join('react-app/build', 'index.html'));
+  res.sendFile(path.join(__dirname, 'react-app/build', 'index.html'));
 });
 
 app.use('/', indexRouter);
