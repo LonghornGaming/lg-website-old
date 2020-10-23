@@ -2,7 +2,7 @@ import React from 'react';
 import Calendar from '@ericz1803/react-google-calendar';
 
 
-const API_KEY = "AIzaSyDevoj3pAgyaJtJqCCzj3CFTiRXEu8tipU";
+const API_KEY = "AIzaSyDWa_GxfQMPx3Ice2U7p8Si3W8Ajzar4OA";
 const CALENDAR_ID = "longhorngaming.gg_biorbbnr3sg9jciq876j2vsnss@group.calendar.google.com";
 
 function Events() {
