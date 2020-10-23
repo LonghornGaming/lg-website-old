@@ -15,4 +15,4 @@ benchmarks/graphs
 !.elasticbeanstalk/*.global.yml
 /.vs
 /bin/www.js
-/keys.js
+react-app/src/keys.js
