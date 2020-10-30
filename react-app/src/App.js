@@ -19,7 +19,7 @@ function App() {
     <Router>
 
       <NavBar bg='dark' variant='dark'>
-        <NavBar.Brand> <img src={logo} width="35" height="30"/> </NavBar.Brand>
+        <NavBar.Brand> <img src={logo} alt="LG Logo" width="35" height="30"/> </NavBar.Brand>
         <Nav>
           <Nav.Link href='home'>Home</Nav.Link>
           <Nav.Link href='about'>About</Nav.Link>
