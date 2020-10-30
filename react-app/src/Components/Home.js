@@ -35,8 +35,6 @@ function Home() {
                     The central hub for casual and competitive gaming at the University of Texas at Austin.
                 </p>
             </Jumbotron>
-            <h2>Get Involved</h2>
-            <p>There are so many ways to get involved with LG! Check out how below:</p>
             <Container>
                 <Row className="justify-content-md-center">
                     <Col>
@@ -68,9 +66,14 @@ function Home() {
                     </Col>
                 </Row>
             </Container>
-
-            <h2>Upcoming Events</h2>
-            <Calendar apiKey={calKey} calendarId={calID} />
+            <br></br>
+            <Container fluid>
+                <Row className="justify-content-md-center">
+                    <Col xs={8}>
+                        <Calendar apiKey={calKey} calendarId={calID} />
+                    </Col>
+                </Row>
+            </Container>
 
         </div>
     )
