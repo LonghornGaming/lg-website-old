@@ -17,7 +17,7 @@ function About() {
                     <Card.Title>Hunter</Card.Title>
                     <Card.Subtitle className="mb-2 text-muted">President</Card.Subtitle>
                     <Card.Text>
-                        Hunter is a senior Archeology major. His favorite games
+                        Hunter is a senior Archaeology major. His favorite games
                         are fetch and belly rubs.
                     </Card.Text>
                     <Card.Link href="#">Card Link</Card.Link>
@@ -30,7 +30,7 @@ function About() {
                     <Card.Title>Hunter</Card.Title>
                     <Card.Subtitle className="mb-2 text-muted">President</Card.Subtitle>
                     <Card.Text>
-                        Hunter is a senior Archeology major. His favorite games
+                        Hunter is a senior Archaeology major. His favorite games
                         are fetch and belly rubs.
                     </Card.Text>
                     <Card.Link href="#">Card Link</Card.Link>
@@ -43,7 +43,7 @@ function About() {
                     <Card.Title>Hunter</Card.Title>
                     <Card.Subtitle className="mb-2 text-muted">President</Card.Subtitle>
                     <Card.Text>
-                        Hunter is a senior Archeology major. His favorite games
+                        Hunter is a senior Archaeology major. His favorite games
                         are fetch and belly rubs.
                     </Card.Text>
                     <Card.Link href="#">Card Link</Card.Link>
