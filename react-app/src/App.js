@@ -1,5 +1,5 @@
 import React  from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import NavBar from 'react-bootstrap/Navbar';
 import Nav    from 'react-bootstrap/Nav';
 
@@ -21,20 +21,22 @@ function App() {
       <NavBar bg='dark' variant='dark'>
         <NavBar.Brand> <img src={logo} alt="LG Logo" width="35" height="30"/> </NavBar.Brand>
         <Nav>
+          <Nav.Link href='home'>Home</Nav.Link>
           <Nav.Link href='about'>About</Nav.Link>
-          <Nav.Link href='blog'>Blog</Nav.Link>
           <Nav.Link href='eSports'>eSports</Nav.Link>
           <Nav.Link href='events'>Events</Nav.Link>        
+         <Nav.Link href='https://discord.com/invite/longhorngaming' target='_blank'>Join Our Discord</Nav.Link>
         </Nav>
       </NavBar>
 
       <Switch>
         <Route exact path="/about"><About /></Route>
         <Route exact path="/esports"><ESports /></Route>
-        <Route exact path="/blog"><Blog /></Route>
+        <Route exact path="/home"><Home /></Route>
         <Route exact path="/events"><Events /></Route>
         <Route exact path="/"><Home /></Route>
-        <Route exact path="/*"><NotFound /></Route>
+        <Route exact path="/404"><NotFound /></Route>
+        <Redirect to="/404"></Redirect>
       </Switch>
 
   </Router>
