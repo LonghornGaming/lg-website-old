@@ -9,6 +9,7 @@ import Image from 'react-bootstrap/Image';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
 
 import Home1 from "../assets/home1.jpg";
 import Home2 from "../assets/home2.jpg";
@@ -44,7 +45,8 @@ function Home() {
                         <p type="text">
                             Interested in tournaments, LAN parties, casual events, and more?
                             Check out our list of events here!
-                        </p>    
+                        </p>
+                        <Button href="events" variant="dark">View Events List</Button>
                     </Col>
                     <Col>
                         <img src={Home2}  width="100%" min-height="185" rounded/>
@@ -52,7 +54,8 @@ function Home() {
                         <p type="text">
                             Show the world what you and LG are made of by competing
                             in tournaments for whatever game you want.
-                        </p>  
+                        </p>
+                        <Button href="eSports" variant="dark">Learn About eSports</Button>  
                     </Col>
                     <Col>
                         <img src={Home3}  width="100%" min-height="185" rounded/>
@@ -60,7 +63,8 @@ function Home() {
                         <p type="text">
                             Connect with us on our social media and join our community on Hornslink
                             by clicking the button below!
-                        </p>  
+                        </p>
+                        <Button href="https://linktr.ee/longhorngaming" variant="dark">Visit Our linktr.ee</Button>  
                     </Col>
                 </Row>
             </Container>
