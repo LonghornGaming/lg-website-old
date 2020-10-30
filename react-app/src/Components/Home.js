@@ -1,8 +1,11 @@
 import React from 'react';
-
+import Footer from './Footer';
 function Home() {
     return (
-        <h1>Welcome to LG's Home Page!</h1>
+        <div>
+            <h1>Welcome to LG's Home Page!</h1>
+            <Footer></Footer>
+        </div>
     )
 }
 
