@@ -9,6 +9,7 @@ import ESports from './Components/ESports';
 import Events from './Components/Events';
 import NotFound from './Components/NotFound';
 import Home     from './Components/Home';
+import Socials from './Components/Socials'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from './assets/LGWhiteLogo.png';
@@ -26,7 +27,8 @@ function App() {
           <Nav.Link href='home'>Home</Nav.Link>
           <Nav.Link href='about'>About</Nav.Link>
           <Nav.Link href='eSports'>eSports</Nav.Link>
-          <Nav.Link href='events'>Events</Nav.Link>        
+          <Nav.Link href='events'>Events</Nav.Link>    
+          <Nav.Link href='socials'>Socials</Nav.Link>    
          <Nav.Link href='https://discord.com/invite/longhorngaming' target='_blank'>Join Our Discord</Nav.Link>
         </Nav>
       </NavBar>
@@ -36,6 +38,7 @@ function App() {
         <Route exact path="/esports"><ESports /></Route>
         <Route exact path="/home"><Home /></Route>
         <Route exact path="/events"><Events /></Route>
+        <Route exact path="/socials"><Socials /></Route>
         <Route exact path="/"><Home /></Route>
         <Route exact path="/404"><NotFound /></Route>
         <Redirect to="/404"></Redirect>
