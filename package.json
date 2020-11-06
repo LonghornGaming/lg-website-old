@@ -15,6 +15,7 @@
     "react_google_calendar": "^2.2.4444"
   },
   "devDependencies": {
+    "cors": "^2.8.5",
     "mongodb": "^3.6.2"
   }
 }

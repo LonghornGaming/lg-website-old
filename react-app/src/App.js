@@ -15,6 +15,8 @@ import logo from './assets/LGWhiteLogo.png';
 
 import Footer from './Components/Footer';
 
+import PlayerCard from './Components/PlayerCard';
+
 function App() {
   return (
 
@@ -40,7 +42,7 @@ function App() {
         <Route exact path="/404"><NotFound /></Route>
         <Redirect to="/404"></Redirect>
       </Switch>
-
+        <PlayerCard></PlayerCard>
         <Footer></Footer>
 
   </Router>
