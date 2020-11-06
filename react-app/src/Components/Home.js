@@ -1,8 +1,6 @@
 import React from 'react';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 
-import ut_image from '../assets/ut.jpg';
-
 import Calendar from '@ericz1803/react-google-calendar';
 
 import Image from 'react-bootstrap/Image';
@@ -11,16 +9,14 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 
-import Home1 from "../assets/home1.jpg";
-import Home2 from "../assets/home2.jpg";
-import Home3 from "../assets/home3.jpg";
+import images from "../assets/images.js";
 
 const { calKey, calID } = require('../keys.js');
 const styles = {
     paddingTop:    '200px',
     paddingBottom: '200px',
 
-    backgroundImage:    'url(' + ut_image + ')',
+    backgroundImage:    'url(' + images.utlandscape + ')',
     backgroundPosition: 'center center',
     backgroundRepeat:   'no-repeat',
     backgroundSize:     'cover',
@@ -38,7 +34,7 @@ function Home() {
             <Container>
                 <Row className="justify-content-md-center">
                     <Col>
-                        <Image src={Home1} width="100%" min-height="185" rounded/>
+                        <Image src={images.home1} width="100%" min-height="185" rounded/>
                         <h3>Community Events</h3>
                         <p type="text">
                             Interested in tournaments, LAN parties, casual events, and more?
@@ -47,7 +43,7 @@ function Home() {
                         <Button href="events" variant="dark">View Events List</Button>
                     </Col>
                     <Col>
-                        <img src={Home2}  width="100%" min-height="185" rounded/>
+                        <img src={images.home2}  width="100%" min-height="185" rounded/>
                         <h3>Competitive Teams</h3>
                         <p type="text">
                             Show the world what you and LG are made of by competing
@@ -56,7 +52,7 @@ function Home() {
                         <Button href="eSports" variant="dark">Learn About eSports</Button>  
                     </Col>
                     <Col>
-                        <img src={Home3}  width="100%" min-height="185" rounded/>
+                        <img src={images.home3}  width="100%" min-height="185" rounded/>
                         <h3>Learn More</h3>
                         <p type="text">
                             Connect with us on our social media and join our community on Hornslink
