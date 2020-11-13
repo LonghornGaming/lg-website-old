@@ -1,8 +1,26 @@
 import React from 'react';
+import { Container, Row, Col } from "react-bootstrap";
+
+import discord   from "../assets/icons/discord.svg";
+import facebook  from "../assets/icons/facebook.svg";
+import instagram from "../assets/icons/instagram.svg";
+import twitter   from "../assets/icons/twitter.svg";
+import youtube   from "../assets/icons/youtube.svg";
 
 function Socials() {
     return (
-        <h1>Welcome to LG's Socials Page!</h1>
+        <Container>
+            <h1>Welcome to LG's Socials Page!</h1>
+            <Container>
+                <Row>
+                    <Col><img src={discord}   alt="Instagram Logo" height="50%" width="50%"/></Col>
+                    <Col><img src={facebook}  alt="Instagram Logo" height="50%" width="50%"/></Col>
+                    <Col><img src={instagram} alt="Instagram Logo" height="50%" width="50%"/></Col>
+                    <Col><img src={twitter}   alt="Instagram Logo" height="50%" width="50%"/></Col>
+                    <Col><img src={youtube} alt="Instagram Logo" height="50%" width="50%"/></Col>
+                </Row>
+            </Container>
+        </Container>
     )
 }
 
