@@ -3,11 +3,11 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  console.log("Made it")
-  res.send({ result: "Got a result"});
-  // req.app.locals.db.collection('listingAndReviews').findOne('').then(result => {
-  //
-  // });
+  let collection = req.query.collection;
+  let search = req.query.search;
+   req.app.locals.db.collection(collection).findOne({"name" : search}).then(result => {
+       res.send(result);
+   });
 });
 
 module.exports = router;

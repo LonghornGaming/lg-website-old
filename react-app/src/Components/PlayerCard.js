@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import Card from 'react-bootstrap/Card';
 
 class PlayerCard extends React.Component{
     constructor(props){
@@ -11,13 +12,15 @@ class PlayerCard extends React.Component{
     //After render
     async componentDidMount(){
         //setState
-        const response = await axios.get("http://localhost:1000/api")
+        const response = await axios.get("http://localhost:1000/api?collection=players&search=Testman");
         console.log(response)
     }
 
     render(){
         return(
-            <div>{this.state.data}</div>
+            <div>
+                <Card>data</Card>
+            </div>
         );
     }
 }
