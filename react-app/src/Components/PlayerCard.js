@@ -9,14 +9,10 @@ class PlayerCard extends React.Component{
         };
     }
     //After render
-    componentDidMount(){
+    async componentDidMount(){
         //setState
-        axios.get('http://localhost:1000/index').then(response => {
-            console.log(response.data);
-            this.setState({data: response.data.result});
-        }).catch(error => {
-            this.setState({data: error.message});
-        });
+        const response = await axios.get("http://localhost:1000/api")
+        console.log(response)
     }
 
     render(){

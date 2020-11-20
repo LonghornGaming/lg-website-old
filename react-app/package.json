@@ -44,5 +44,6 @@
   },
   "devDependencies": {
     "axios": "^0.21.0"
-  }
+  },
+  "proxy": "http://localhost:1000"
 }
