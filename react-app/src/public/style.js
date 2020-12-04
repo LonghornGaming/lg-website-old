@@ -1,5 +1,5 @@
 const footerStyle = {
-    backgroundColor: "#343A40",
+    backgroundColor: "#000000",
     color: "gray",
     h1: {
         color:"white"

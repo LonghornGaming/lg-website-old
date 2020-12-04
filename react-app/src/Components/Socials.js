@@ -3,11 +3,11 @@ import { Container, Row, Col } from "react-bootstrap";
 import ReactPlayer from "react-player";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 
-import { ReactComponent as Discord } from "../assets/icons/discord1.svg";
-import { ReactComponent as Facebook } from "../assets/icons/facebook.svg";
+import { ReactComponent as Discord }   from "../assets/icons/discord.svg";
+import { ReactComponent as Facebook }  from "../assets/icons/facebook.svg";
 import { ReactComponent as Instagram } from "../assets/icons/instagram.svg";
-import { ReactComponent as Twitter } from "../assets/icons/twitter.svg";
-import { ReactComponent as Youtube } from "../assets/icons/youtube.svg";
+import { ReactComponent as Twitter }   from "../assets/icons/twitter.svg";
+import { ReactComponent as Youtube }   from "../assets/icons/youtube.svg";
 
 function Icon(props) {
     return (

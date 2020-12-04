@@ -7,13 +7,100 @@ import { Link }  from "react-router-dom";
 import logo      from "../assets/Orange_Logo-p-500.png";
 import Home      from "./Home";
 
+import { ReactComponent as Discord }   from "../assets/icons/discord.svg";
+import { ReactComponent as Facebook }  from "../assets/icons/facebook.svg";
+import { ReactComponent as Instagram } from "../assets/icons/instagram.svg";
+import { ReactComponent as Twitter }   from "../assets/icons/twitter.svg";
+import { ReactComponent as Youtube }   from "../assets/icons/youtube.svg";
+import { ReactComponent as Linkedin }  from "../assets/icons/linkedin.svg";
+import { ReactComponent as Steam }     from "../assets/icons/steam.svg";
+import { ReactComponent as Twitch }    from "../assets/icons/twitch.svg";
+import { ReactComponent as Beepo }     from "../assets/icons/beepo.svg";
+import { ReactComponent as Logo}       from "../assets/icons/logo.svg";
+
 import { footerStyle } from "../public/style";
 import "bootstrap/dist/css/bootstrap.min.css";
+
+function Icon(props) {
+    return (
+        <a href={props.url} target="_blank" rel="noreferrer">
+            {props.icon}
+        </a>
+    );
+}
 
 function Footer() {
     return (
         <div style={footerStyle}>
-            <Container>
+            <Container style={{paddingTop: "20px"}}>
+                <Row style={{display: 'flex', justifyContent: 'center'}}>
+                    <Link to="/home">
+                        <Icon
+                            url=""
+                            icon=<Logo height="40%" width="40%" />
+                        />
+                    </Link>
+                </Row>
+                <Row>
+                    <Col>
+                        <Icon
+                            url="https://www.discord.gg/longhorngaming"
+                            icon=<Discord height="55%" width="55%" />
+                        />
+                    </Col>
+                    <Col>
+                        <Icon
+                            url="https://www.twitch.tv/utlonghorngaming"
+                            icon=<Twitch height="55%" width="55%" />
+                        />
+                    </Col>
+                    <Col>
+                    <   Icon
+                            url="https://www.youtube.com/longhorngaming"
+                            icon=<Youtube height="55%" width="55%" />
+                        />
+                    </Col>
+                    <Col>
+                        <Icon
+                            url="https://www.instagram.com/longhorngaming/"
+                            icon=<Instagram height="55%" width="55%" />
+                        />
+                    </Col>
+                    <Col>
+                        <Icon
+                            url="http://steamcommunity.com/groups/LonghornGaming"
+                            icon=<Steam height="55%" width="55%" />
+                        />
+                    </Col>
+                    <Col>
+                        <Icon
+                            url="https://twitter.com/longhorn_gaming"
+                            icon=<Twitter height="55%" width="55%" />
+                        />
+                    </Col>
+                    <Col>
+                        <Icon
+                            url="https://utexas.campuslabs.com/engage/organization/longhorngaming"
+                            icon=<Beepo height="55%" width="55%" />
+                        />
+                    </Col>
+                    <Col>
+                        <Icon
+                            url="https://www.facebook.com/ut.longhorn.gaming"
+                            icon=<Facebook height="55%" width="55%" />
+                        />
+                    </Col>
+                    <Col>
+                        <Icon
+                            url="https://www.linkedin.com/company/longhorn-gaming/"
+                            icon=<Linkedin height="55%" width="55%" />
+                        />
+                    </Col>
+                </Row>
+            </Container>
+
+
+            {/* <Container>
                 <Row>
                     <Col style={{paddingTop: "20px"}}>
                         <Link to="/home">
@@ -121,7 +208,7 @@ function Footer() {
                         </ul>
                     </Col>
                 </Row>
-            </Container>
+            </Container> */}
         </div>
     );
 }
