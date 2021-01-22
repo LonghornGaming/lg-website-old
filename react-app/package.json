@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@emotion/core": "^10.0.35",
+    "@emotion/react": "^11.1.4",
     "@ericz1803/react-google-calendar": "^3.0.4",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
