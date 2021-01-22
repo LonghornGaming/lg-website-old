@@ -13,6 +13,14 @@ router.get('/', function(req, res, next) {
 router.post('/', (req, res) => {
     //mom's spaghetti
     let json = JSON.parse(Object.keys(req.body)[0]);
+    //check if form is an email
+    if('email' in json){
+        //store email in mongo
+        let email = {
+            email: json.email
+        }
+        req.app.locals.db.collection('emails').insertOne(email);
+    }
     //mess with JSON here
     res.send("200")
 });

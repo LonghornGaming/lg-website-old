@@ -8,15 +8,16 @@ class NewsletterForm extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = { name: '' };
+        this.state = { email: '' };
     }
 
     handleChange = (event) => {
-        this.setState({[event.target.name]: event.target.value});
+        this.setState({email: event.target.value});
     }
 
     handleSubmit = (event) => {
         //TEMP
+        //console.log(this.state);
         fetch('http://localhost:1000/api', {
             method: 'POST',
             // We convert the React state to JSON and send it as the POST body
@@ -33,13 +34,21 @@ class NewsletterForm extends React.Component {
 
     render() {
         return (
-            <form onSubmit={this.handleSubmit}>
-                <label>
-                    Name:
-                    <input type="text" value={this.state.value} name="name" onChange={this.handleChange} />
-                </label>
-                <input type="submit" value="Submit" />
-            </form>
+
+
+        <Form onSubmit={this.handleSubmit}>
+            <Form.Group controlId="formBasicEmail">
+                <Form.Label>Email address</Form.Label>
+                <Form.Control type="email" placeholder="Enter email" onChange={this.handleChange}/>
+                <Form.Text className="text-muted">
+                    We'll never share your email with anyone else.
+                </Form.Text>
+            </Form.Group>
+
+            <Button variant="primary" type="submit">
+                Submit
+            </Button>
+        </Form>
         );
     }
 }
