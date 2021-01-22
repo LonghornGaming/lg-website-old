@@ -45,8 +45,7 @@ function App() {
         <Route exact path="/404"><NotFound /></Route>
         <Redirect to="/404"></Redirect>
       </Switch>
-        <PlayerCard></PlayerCard>
-        <Footer></Footer>
+
 
   </Router>
   )
