@@ -10,4 +10,11 @@ router.get('/', function(req, res, next) {
    });
 });
 
+router.post('/', (req, res) => {
+    //mom's spaghetti
+    let json = JSON.parse(Object.keys(req.body)[0]);
+    //mess with JSON here
+    res.send("200")
+});
+
 module.exports = router;

@@ -8,8 +8,8 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-
 import images from "../assets/images.js";
+import NewsletterForm from './NewsletterForm';
 
 const { calKey, calID } = require('../keys.js');
 const styles = {
@@ -61,6 +61,9 @@ function Home() {
                         <Button href="https://linktr.ee/longhorngaming" variant="dark">Visit Our linktr.ee</Button>  
                     </Col>
                 </Row>
+
+            <NewsletterForm></NewsletterForm>
+
             </Container>
             <br></br>
             <Container fluid>
