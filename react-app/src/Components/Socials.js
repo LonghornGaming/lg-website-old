@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Container, Row, Col } from "react-bootstrap";
+import { Card, Container, Row, Col, Image } from "react-bootstrap";
 import ReactPlayer from "react-player";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 
