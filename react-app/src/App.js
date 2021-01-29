@@ -48,8 +48,10 @@ function App() {
         <Redirect to="/404"></Redirect>
       </Switch>
 
-
+      <Footer/>
   </Router>
+
+  
   )
 }
 
