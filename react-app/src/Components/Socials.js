@@ -2,6 +2,7 @@ import React from "react";
 import { Card, Container, Row, Col } from "react-bootstrap";
 import ReactPlayer from "react-player";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
+import NewsletterForm from './NewsletterForm';
 
 import testImg from "../assets/dog.jpg";
 
@@ -118,14 +119,13 @@ function Socials() {
                         </div>
                     </Col>
                 </Row>
-                <Row style={{marginTop:"60px", marginBottom:"100px"}}>
-                    <form>
-                        <input type="text" size="106" placeholder="  Enter your email here" />
-                    </form>
-                    <button type="button" style={{marginLeft: "15px", paddingLeft:"40px", paddingRight:"40px"}}>
-                    "Sign up for our newsletter!"
-                    </button>
-                </Row>
+
+                <br></br>
+                <Container>
+                    <NewsletterForm></NewsletterForm>
+                </Container>
+                <br></br>
+
                 <Row style={rowStyle}>
                 <Col><Card>
                         <Card.Img

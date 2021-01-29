@@ -29,7 +29,8 @@ function App() {
           <Nav.Link href='home'>Home</Nav.Link>
           <Nav.Link href='about'>About</Nav.Link>
           <Nav.Link href='eSports'>eSports</Nav.Link>
-          <Nav.Link href='events'>Events</Nav.Link>    
+          <Nav.Link href='events'>Events</Nav.Link>
+          <Nav.Link href='blog'>Blog</Nav.Link>
           <Nav.Link href='socials'>Socials</Nav.Link>    
          <Nav.Link href='https://discord.com/invite/longhorngaming' target='_blank'>Join Our Discord</Nav.Link>
         </Nav>
@@ -40,6 +41,7 @@ function App() {
         <Route exact path="/esports"><ESports /></Route>
         <Route exact path="/home"><Home /></Route>
         <Route exact path="/events"><Events /></Route>
+        <Route exact path="/blog"><Blog /></Route>
         <Route exact path="/socials"><Socials /></Route>
         <Route exact path="/"><Home /></Route>
         <Route exact path="/404"><NotFound /></Route>

@@ -37,17 +37,19 @@ class NewsletterForm extends React.Component {
 
 
         <Form onSubmit={this.handleSubmit}>
-            <Form.Group controlId="formBasicEmail">
-                <Form.Label>Email address</Form.Label>
-                <Form.Control type="email" placeholder="Enter email" onChange={this.handleChange}/>
-                <Form.Text className="text-muted">
-                    We'll never share your email with anyone else.
-                </Form.Text>
-            </Form.Group>
+            <Row>
+                <Col xs={9}>
+                    <Form.Group controlId="formBasicEmail" >
+                        <Form.Control type="email" placeholder="Enter email" onChange={this.handleChange}/>
+                    </Form.Group>
+                </Col>
+                <Col xs={3}>
+                    <Button variant="primary" type="submit">
+                        Sign up for our Newsletter
+                    </Button>
+                </Col>
 
-            <Button variant="primary" type="submit">
-                Submit
-            </Button>
+            </Row>
         </Form>
         );
     }
