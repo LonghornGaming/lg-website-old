@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Container, Row, Col } from "react-bootstrap";
+import { Image, Card, Container, Row, Col } from "react-bootstrap";
 import ReactPlayer from "react-player";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 
@@ -16,6 +16,7 @@ import { ReactComponent as Steam }     from "../assets/icons/steam_alt.svg";
 import { ReactComponent as Twitch }    from "../assets/icons/twitch_alt.svg";
 import { ReactComponent as Beepo }     from "../assets/icons/beepo.svg";
 import { ReactComponent as Logo}       from "../assets/icons/longhorn_alt.svg";
+import { ReactComponent as Reddit}       from "../assets/icons/reddit_alt.svg";
 
 const cardStyle = {
     height: "200px",
@@ -25,6 +26,10 @@ const rowStyle = {
     paddingBottom: "20px",
 };
 
+const showcaseStyle = {
+    width: 203,
+    height: 203
+}
 
 function Icon(props) {
     return (
@@ -95,7 +100,12 @@ function Socials() {
                             icon=<Linkedin height="55%" width="55%" />
                         />
                     </Col>
-                    
+                    <Col>
+                        <Icon
+                            url="https://www.reddit.com/r/LonghornGaming/"
+                            icon=<Reddit height="55%" width="55%" />
+                        />
+                    </Col>
                 </Row>
                 <Row>
                     <Col>
@@ -126,17 +136,32 @@ function Socials() {
                     "Sign up for our newsletter!"
                     </button>
                 </Row>
+                <Row>
+                    <h2>Community Showcase</h2>
+                </Row>
+                <Row style={{rowStyle}}>
+                    <Col>
+                        <Image style={showcaseStyle} src={testImg} width="100%" rounded/>
+                    </Col>
+                
+                    <Col>
+                        <h3>Porttitor pharetra urna</h3>
+                    </Col>
+                        
+                    
+                </Row>
+                    
+                    
+                <Row style={{marginBottom: "20px"}}>
+                    <h2>Streamers</h2>
+                </Row>
                 <Row style={rowStyle}>
                 <Col><Card>
-                        <Card.Img
-                            style={cardStyle}
-                            variant="top"
-                            src={testImg}
-                        />
+                        
                         <Card.Body>
-                            <Card.Title>Hunter</Card.Title>
+                            <Card.Title>Streamer Name</Card.Title>
                             <Card.Subtitle className="mb-2 text-muted">
-                                President
+                                Actual Name?
                             </Card.Subtitle>
                             <Card.Text>
                                 Hunter is a senior Archaeology major. His
@@ -147,15 +172,11 @@ function Socials() {
                         </Card.Body>
                     </Card></Col>
                 <Col><Card>
-                        <Card.Img
-                            style={cardStyle}
-                            variant="top"
-                            src={testImg}
-                        />
+                        
                         <Card.Body>
-                            <Card.Title>Hunter</Card.Title>
+                            <Card.Title>Streamer Name</Card.Title>
                             <Card.Subtitle className="mb-2 text-muted">
-                                President
+                                Actual Name?
                             </Card.Subtitle>
                             <Card.Text>
                                 Hunter is a senior Archaeology major. His
@@ -166,15 +187,11 @@ function Socials() {
                         </Card.Body>
                     </Card></Col>
                 <Col><Card>
-                        <Card.Img
-                            style={cardStyle}
-                            variant="top"
-                            src={testImg}
-                        />
+                        
                         <Card.Body>
-                            <Card.Title>Hunter</Card.Title>
+                            <Card.Title>Streamer Name</Card.Title>
                             <Card.Subtitle className="mb-2 text-muted">
-                                President
+                                Actual Name?
                             </Card.Subtitle>
                             <Card.Text>
                                 Hunter is a senior Archaeology major. His
@@ -185,6 +202,101 @@ function Socials() {
                         </Card.Body>
                     </Card></Col>
             </Row>
+            <Row style={rowStyle}>
+                <Col><Card>
+                        
+                        <Card.Body>
+                            <Card.Title>Streamer Name</Card.Title>
+                            <Card.Subtitle className="mb-2 text-muted">
+                                Actual Name?
+                            </Card.Subtitle>
+                            <Card.Text>
+                                Hunter is a senior Archaeology major. His
+                                favorite games are fetch and belly rubs.
+                            </Card.Text>
+                            <Card.Link href="#">Card Link</Card.Link>
+                            <Card.Link href="#">Another Link</Card.Link>
+                        </Card.Body>
+                    </Card></Col>
+                <Col><Card>
+                        
+                        <Card.Body>
+                            <Card.Title>Streamer Name</Card.Title>
+                            <Card.Subtitle className="mb-2 text-muted">
+                                Actual Name?
+                            </Card.Subtitle>
+                            <Card.Text>
+                                Hunter is a senior Archaeology major. His
+                                favorite games are fetch and belly rubs.
+                            </Card.Text>
+                            <Card.Link href="#">Card Link</Card.Link>
+                            <Card.Link href="#">Another Link</Card.Link>
+                        </Card.Body>
+                    </Card></Col>
+                <Col><Card>
+                        
+                        <Card.Body>
+                            <Card.Title>Streamer Name</Card.Title>
+                            <Card.Subtitle className="mb-2 text-muted">
+                                Actual Name?
+                            </Card.Subtitle>
+                            <Card.Text>
+                                Hunter is a senior Archaeology major. His
+                                favorite games are fetch and belly rubs.
+                            </Card.Text>
+                            <Card.Link href="#">Card Link</Card.Link>
+                            <Card.Link href="#">Another Link</Card.Link>
+                        </Card.Body>
+                    </Card></Col>
+            </Row>
+            <Row style={rowStyle}>
+                <Col><Card>
+                        
+                        <Card.Body>
+                            <Card.Title>Streamer Name</Card.Title>
+                            <Card.Subtitle className="mb-2 text-muted">
+                                Actual Name?
+                            </Card.Subtitle>
+                            <Card.Text>
+                                Hunter is a senior Archaeology major. His
+                                favorite games are fetch and belly rubs.
+                            </Card.Text>
+                            <Card.Link href="#">Card Link</Card.Link>
+                            <Card.Link href="#">Another Link</Card.Link>
+                        </Card.Body>
+                    </Card></Col>
+                <Col><Card>
+                        
+                        <Card.Body>
+                            <Card.Title>Streamer Name</Card.Title>
+                            <Card.Subtitle className="mb-2 text-muted">
+                                Actual Name?
+                            </Card.Subtitle>
+                            <Card.Text>
+                                Hunter is a senior Archaeology major. His
+                                favorite games are fetch and belly rubs.
+                            </Card.Text>
+                            <Card.Link href="#">Card Link</Card.Link>
+                            <Card.Link href="#">Another Link</Card.Link>
+                        </Card.Body>
+                    </Card></Col>
+                <Col><Card>
+                        
+                        <Card.Body>
+                            <Card.Title>Streamer Name</Card.Title>
+                            <Card.Subtitle className="mb-2 text-muted">
+                                Actual Name?
+                            </Card.Subtitle>
+                            <Card.Text>
+                                Hunter is a senior Archaeology major. His
+                                favorite games are fetch and belly rubs.
+                            </Card.Text>
+                            <Card.Link href="#">Card Link</Card.Link>
+                            <Card.Link href="#">Another Link</Card.Link>
+                        </Card.Body>
+                    </Card></Col>
+            </Row>
+            
             </Container>
         </Container>
     );
