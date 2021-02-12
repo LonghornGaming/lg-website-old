@@ -3,11 +3,15 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  let collection = req.query.collection;
-  let search = req.query.search;
-   req.app.locals.db.collection(collection).findOne({"name" : search}).then(result => {
-       res.send(result);
-   });
+    let collection = req.query.collection;
+    // For PlayerCard stuff that we aren't doing anymore maybe
+    // req.app.locals.db.collection(collection).findOne({"name" : search}).then(result => {
+    //     res.send(result);
+    // });
+    req.app.locals.db.collection(collection).find().toArray().then(result => {
+        console.log(result)
+        res.send(result)
+    })
 });
 
 router.post('/', (req, res) => {
