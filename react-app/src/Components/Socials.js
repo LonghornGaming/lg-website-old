@@ -1,10 +1,10 @@
 import React from "react";
 import { Card, Container, Row, Col, Image } from "react-bootstrap";
 import ReactPlayer from "react-player";
+import axios from "axios";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 
 import testImg from "../assets/dog.jpg";
-
 
 import { ReactComponent as Discord }   from "../assets/icons/discord_alt.svg";
 import { ReactComponent as Facebook }  from "../assets/icons/facebook_alt.svg";
@@ -32,6 +32,7 @@ const showcaseStyle = {
 }
 
 function Icon(props) {
+    
     return (
         <a href={props.url} target="_blank" rel="noreferrer">
             {props.icon}
@@ -39,9 +40,21 @@ function Icon(props) {
     );
 }
 
+
+function discInvite() {
+        console.log("hello")
+        axios.get('https://discordapp.com/api/invites/QQgUJ4J4fy?with_counts=true').then(result=>{
+            console.log(result)
+            return(result)
+        })
+}
+
+
 function Socials() {
+    discInvite()
     return (
         <Container>
+                   
             <h1 style={{marginTop: "163px", marginLeft: "25px", marginBottom: "50px"}}> Welcome to LG's Socials Page!</h1>
             <p1 style={{marginTop: "56px", marginLeft: "27px"}} >stay connected w the coolest</p1>
             <Container style={{marginTop: "25px"}}>
@@ -84,7 +97,8 @@ function Socials() {
                     </Col>
                     <Col>
                         <Icon
-                            url="https://utexas.campuslabs.com/engage/organization/longhorngaming"
+                    
+                    url="https://utexas.campuslabs.com/engage/organization/longhorngaming"
                             icon=<Logo height="55%" width="55%" />
                         />
                     </Col>
@@ -136,21 +150,149 @@ function Socials() {
                     "Sign up for our newsletter!"
                     </button>
                 </Row>
-                <Row>
-                    <h2>Community Showcase</h2>
+                <Row style={{marginBottom: "20px"}}>
+                    <h2>Game Ambassadors</h2>
                 </Row>
-                <Row style={{rowStyle}}>
-                    <Col>
-                        <Image style={showcaseStyle} src={testImg} width="100%" rounded/>
-                    </Col>
+                <Row style={rowStyle}>
+                <Col><Card>
+                        <Card.Body>
+                            <Card.Title>Ambassador Name</Card.Title>
+                            <Card.Subtitle className="mb-2 text-muted">
+                                Game Name?
+                            </Card.Subtitle>
+                            <Card.Text>
+                                Hunter is a senior Archaeology major. His
+                                favorite games are fetch and belly rubs.
+                            </Card.Text>
+                            <Card.Link href="#">Card Link</Card.Link>
+                            <Card.Link href="#">Another Link</Card.Link>
+                        </Card.Body>
+                    </Card></Col>
+                <Col><Card>
 
-                    <Col>
-                        <h3>Porttitor pharetra urna</h3>
-                    </Col>
+                <Card.Body>
+                            <Card.Title>Ambassador Name</Card.Title>
+                            <Card.Subtitle className="mb-2 text-muted">
+                                Game Name?
+                            </Card.Subtitle>
+                            <Card.Text>
+                                Hunter is a senior Archaeology major. His
+                                favorite games are fetch and belly rubs.
+                            </Card.Text>
+                            <Card.Link href="#">Card Link</Card.Link>
+                            <Card.Link href="#">Another Link</Card.Link>
+                        </Card.Body>
+                    </Card></Col>
+                <Col><Card>
 
+                <Card.Body>
+                            <Card.Title>Ambassador Name</Card.Title>
+                            <Card.Subtitle className="mb-2 text-muted">
+                                Game Name?
+                            </Card.Subtitle>
+                            <Card.Text>
+                                Hunter is a senior Archaeology major. His
+                                favorite games are fetch and belly rubs.
+                            </Card.Text>
+                            <Card.Link href="#">Card Link</Card.Link>
+                            <Card.Link href="#">Another Link</Card.Link>
+                        </Card.Body>
+                    </Card></Col>
+            </Row>
+            <Row style={rowStyle}>
+                <Col><Card>
 
-                </Row>
+                <Card.Body>
+                            <Card.Title>Ambassador Name</Card.Title>
+                            <Card.Subtitle className="mb-2 text-muted">
+                                Game Name?
+                            </Card.Subtitle>
+                            <Card.Text>
+                                Hunter is a senior Archaeology major. His
+                                favorite games are fetch and belly rubs.
+                            </Card.Text>
+                            <Card.Link href="#">Card Link</Card.Link>
+                            <Card.Link href="#">Another Link</Card.Link>
+                        </Card.Body>
+                    </Card></Col>
+                <Col><Card>
 
+                <Card.Body>
+                            <Card.Title>Ambassador Name</Card.Title>
+                            <Card.Subtitle className="mb-2 text-muted">
+                                Game Name?
+                            </Card.Subtitle>
+                            <Card.Text>
+                                Hunter is a senior Archaeology major. His
+                                favorite games are fetch and belly rubs.
+                            </Card.Text>
+                            <Card.Link href="#">Card Link</Card.Link>
+                            <Card.Link href="#">Another Link</Card.Link>
+                        </Card.Body>
+                    </Card></Col>
+                <Col><Card>
+
+                <Card.Body>
+                            <Card.Title>Ambassador Name</Card.Title>
+                            <Card.Subtitle className="mb-2 text-muted">
+                                Game Name?
+                            </Card.Subtitle>
+                            <Card.Text>
+                                Hunter is a senior Archaeology major. His
+                                favorite games are fetch and belly rubs.
+                            </Card.Text>
+                            <Card.Link href="#">Card Link</Card.Link>
+                            <Card.Link href="#">Another Link</Card.Link>
+                        </Card.Body>
+                    </Card></Col>
+            </Row>
+            <Row style={rowStyle}>
+                <Col><Card>
+
+                <Card.Body>
+                            <Card.Title>Ambassador Name</Card.Title>
+                            <Card.Subtitle className="mb-2 text-muted">
+                                Game Name?
+                            </Card.Subtitle>
+                            <Card.Text>
+                                Hunter is a senior Archaeology major. His
+                                favorite games are fetch and belly rubs.
+                            </Card.Text>
+                            <Card.Link href="#">Card Link</Card.Link>
+                            <Card.Link href="#">Another Link</Card.Link>
+                        </Card.Body>
+                    </Card></Col>
+                <Col><Card>
+
+                <Card.Body>
+                            <Card.Title>Ambassador Name</Card.Title>
+                            <Card.Subtitle className="mb-2 text-muted">
+                                Game Name?
+                            </Card.Subtitle>
+                            <Card.Text>
+                                Hunter is a senior Archaeology major. His
+                                favorite games are fetch and belly rubs.
+                            </Card.Text>
+                            <Card.Link href="#">Card Link</Card.Link>
+                            <Card.Link href="#">Another Link</Card.Link>
+                        </Card.Body>
+                    </Card></Col>
+                <Col><Card>
+
+                <Card.Body>
+                            <Card.Title>Ambassador Name</Card.Title>
+                            <Card.Subtitle className="mb-2 text-muted">
+                                Game Name?
+                            </Card.Subtitle>
+                            <Card.Text>
+                                Hunter is a senior Archaeology major. His
+                                favorite games are fetch and belly rubs.
+                            </Card.Text>
+                            <Card.Link href="#">Card Link</Card.Link>
+                            <Card.Link href="#">Another Link</Card.Link>
+                        </Card.Body>
+                    </Card></Col>
+            </Row>
 
                 <Row style={{marginBottom: "20px"}}>
                     <h2>Streamers</h2>
