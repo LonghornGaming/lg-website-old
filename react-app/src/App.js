@@ -3,20 +3,19 @@ import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-d
 import NavBar from 'react-bootstrap/Navbar';
 import Nav    from 'react-bootstrap/Nav';
 
-import Blog     from './Components/Blog';
+import Blogs     from './Components/Blogs';
 import About    from './Components/About';
 import ESports from './Components/ESports';
 import Events from './Components/Events';
 import NotFound from './Components/NotFound';
 import Home     from './Components/Home';
 import Socials from './Components/Socials'
+import Blog from "./Components/Blog";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from './assets/LGWhiteLogo.png';
 
 import Footer from './Components/Footer';
-
-import PlayerCard from './Components/PlayerCard';
 
 function App() {
   return (
@@ -30,7 +29,7 @@ function App() {
           <Nav.Link href='about'>About</Nav.Link>
           <Nav.Link href='eSports'>eSports</Nav.Link>
           <Nav.Link href='events'>Events</Nav.Link>
-          <Nav.Link href='blog'>Blog</Nav.Link>
+          <Nav.Link href='blogs'>Blogs</Nav.Link>
           <Nav.Link href='socials'>Socials</Nav.Link>    
          <Nav.Link href='https://discord.com/invite/longhorngaming' target='_blank'>Join Our Discord</Nav.Link>
         </Nav>
@@ -41,10 +40,11 @@ function App() {
         <Route exact path="/esports"><ESports /></Route>
         <Route exact path="/home"><Home /></Route>
         <Route exact path="/events"><Events /></Route>
-        <Route exact path="/blog"><Blog /></Route>
+        <Route exact path="/blogs"><Blogs /></Route>
         <Route exact path="/socials"><Socials /></Route>
         <Route exact path="/"><Home /></Route>
         <Route exact path="/404"><NotFound /></Route>
+          <Route exact path='/blog/'><Blog/></Route>
         <Redirect to="/404"></Redirect>
       </Switch>
 

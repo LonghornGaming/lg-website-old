@@ -3,15 +3,22 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    let collection = req.query.collection;
-    // For PlayerCard stuff that we aren't doing anymore maybe
-    // req.app.locals.db.collection(collection).findOne({"name" : search}).then(result => {
-    //     res.send(result);
-    // });
-    req.app.locals.db.collection(collection).find().toArray().then(result => {
-        console.log(result)
-        res.send(result)
-    })
+
+
+    console.log(req.query)
+    if('collection' in req.query){
+        let collection = req.query.collection;
+        if('id' in req.query){
+            let id = require('mongodb').ObjectID(req.query.id);
+            req.app.locals.db.collection(collection).findOne({_id : id}).then(result => {
+                res.send(result)
+            });
+        } else {
+            req.app.locals.db.collection(collection).find().toArray().then(result => {
+                res.send(result)
+            });
+        }
+    }
 });
 
 router.post('/', (req, res) => {
