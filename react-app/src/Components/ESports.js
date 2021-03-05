@@ -4,17 +4,23 @@ import Card from 'react-bootstrap/Card';
 
 import images from '../assets/images';
 
+var cardStyle = {
+    display: 'block',
+    width: '15vw',
+    height: '15vw'
+}
+
 function ESports() {
     return (
         <div><h1>Welcome to LG's Esports Page!</h1>
             <CardDeck>
-                <Card>
+                <Card style={cardStyle}>
                     <Card.Img variant="top" src={images.apexLegends}/>
                     <Card.Body>
                         <Card.Title>Apex Legends</Card.Title>
                     </Card.Body>
                 </Card>
-                <Card>
+                <Card style={cardStyle}>
                     <Card.Img variant="top" src={images.beatsaber}/>
                     <Card.Body>
                         <Card.Title>Beat Saber</Card.Title>
@@ -44,7 +50,7 @@ function ESports() {
             </br>
 
             <CardDeck>
-                <Card>
+                <Card style={cardStyle}>
                     <Card.Img variant="top" src={images.dota}/>
                     <Card.Body>
                         <Card.Title>Dota 2</Card.Title>
@@ -79,7 +85,7 @@ function ESports() {
             <br>
             </br>
             <CardDeck>
-                <Card>
+                <Card style={cardStyle}>
                     <Card.Img variant="top" src={images.madden}/>
                     <Card.Body>
                         <Card.Title>Madden 21</Card.Title>
@@ -115,7 +121,7 @@ function ESports() {
             </br>
 
             <CardDeck>
-                <Card>
+                <Card style={cardStyle}>
                     <Card.Img variant="top" src={images.rainbow6}/>
                     <Card.Body>
                         <Card.Title>Rainbow Six Siege</Card.Title>

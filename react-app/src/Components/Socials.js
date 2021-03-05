@@ -147,7 +147,7 @@ function Socials() {
                         <input type="text" size="106" placeholder="  Enter your email here" />
                     </form>
                     <button type="button" style={{marginLeft: "15px", paddingLeft:"40px", paddingRight:"40px"}}>
-                    "Sign up for our newsletter!"
+                    Sign up for our newsletter!
                     </button>
                 </Row>
                 <Row style={{marginBottom: "20px"}}>
