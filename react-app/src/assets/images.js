@@ -25,10 +25,11 @@ import home1 from './home1.jpg'
 import home2 from './home2.jpg'
 import home3 from './home3.jpg'
 import utlandscape from './ut.jpg'
+import eventsLandscape from './eventsJumbo.png'
 
 export default {
     apexLegends, beatsaber, brawlstars, callofduty, csgo, dota, fortnite, hearthstone, herosofthestorm, leagueoflegends, madden, nba2k,
-    osu, overwatch, pubg, rainbow6, rocketleague, smashmelee, smashultimate, starcraft2, streetfighter5, undernight, valorant, home1, home2, home3, utlandscape
+    osu, overwatch, pubg, rainbow6, rocketleague, smashmelee, smashultimate, starcraft2, streetfighter5, undernight, valorant, home1, home2, home3, utlandscape, eventsLandscape
 }
 
 
