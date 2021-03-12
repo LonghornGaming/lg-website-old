@@ -1,10 +1,9 @@
 import React from 'react';
-import { Card, Container, Row, Col, Image } from "react-bootstrap";
-import { BrowserRouter as Router, Switch, Route, Redirect, Link } from 'react-router-dom';
-import Blog from "./Blog";
+import { Card} from "react-bootstrap";
+import {Link } from 'react-router-dom';
 
 let BlogCard = function statelessFunctionComponentClass(props) {
-//<Link to="/blog">{props.title}</Link>
+
     return(
         <div>
             <Card bg='dark' text='white' style={{ width: '18rem' }}>
@@ -14,7 +13,7 @@ let BlogCard = function statelessFunctionComponentClass(props) {
                 <Card.Body>
                     <Card.Title>
                         <nav>
-                            <Link to={'/blog?id=' + props._id}>{props.title}</Link>
+                            <Link style={{ color: '#FFF' }} to={'/blog?id=' + props._id}>{props.title}</Link>
                         </nav>
                     </Card.Title>
                     <Card.Text>Date: {props.date}</Card.Text>

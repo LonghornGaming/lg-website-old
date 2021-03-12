@@ -1,0 +1,21 @@
+{
+  "description": "Test description",
+  "photo" : "https://i.stack.imgur.com/l60Hf.png",
+  "achievements": ["achievement1",
+                   "achievement2",
+                   "achievement3"],
+  "players": [
+    {
+      "name": "Testname1",
+      "role": "Manager",
+      "description": "???"
+    },
+    {
+      "name": "Testname2",
+      "role": "Player",
+      "description": "Hello"
+    }
+  ],
+  "tryout": "Tryouts here",
+  "communities": "Communities here"
+}

@@ -11,6 +11,7 @@ import NotFound from './Components/NotFound';
 import Home     from './Components/Home';
 import Socials from './Components/Socials'
 import Blog from "./Components/Blog";
+import ESportsPage from "./Components/ESportsPage";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from './assets/LGWhiteLogo.png';
@@ -44,7 +45,8 @@ function App() {
         <Route exact path="/socials"><Socials /></Route>
         <Route exact path="/"><Home /></Route>
         <Route exact path="/404"><NotFound /></Route>
-          <Route exact path='/blog/'><Blog/></Route>
+        <Route exact path='/blog/'><Blog/></Route>
+        <Route exact path='/esport'><ESportsPage/></Route>
         <Redirect to="/404"></Redirect>
       </Switch>
 

@@ -4,8 +4,6 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res, next) {
 
-
-    console.log(req.query)
     if('collection' in req.query){
         let collection = req.query.collection;
         if('id' in req.query){
