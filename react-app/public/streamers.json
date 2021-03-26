@@ -1,0 +1,45 @@
+{
+  "data": [
+    {
+      "name": "HCR321",
+      "game": "Game Name",
+      "description": "Hello! My name is HCR321, and I mostly stream RPGs, puzzle-games, and other single-player games with some multiplayer games on the side. I try to keep my streams super chill and casual, and I love to chat about whatever with whoever is watching!",
+      "socials": {
+        "twitch": "https://www.twitch.tv/hcr321",
+        "youtube":"https://www.youtube.com/channel/UCaaUAHhZrjnLleAkTz-ZW_g",
+        "twitter": "https://twitter.com/HayCR321"
+      }
+    },
+    {
+      "name": "Streamers Name",
+      "game": "Game Name",
+      "description": "Hunter is a senior Archaeology major. His favorite games are fetch and belly rubs.",
+      "socials": {
+        "twitch": "",
+        "youtube":"",
+        "twitter": ""
+      }
+    },
+    {
+      "name": "Streamers Name",
+      "game": "Game Name",
+      "description": "Hunter is a senior Archaeology major. His favorite games are fetch and belly rubs.",
+      "socials": {
+        "twitch": "",
+        "youtube":"",
+        "twitter": ""
+      }
+    },
+    {
+      "name": "Streamers Name",
+      "game": "Game Name",
+      "description": "Hunter is a senior Archaeology major. His favorite games are fetch and belly rubs.",
+      "socials": {
+        "twitch": "",
+        "youtube":"",
+        "twitter": ""
+      }
+    }
+
+  ]
+}
