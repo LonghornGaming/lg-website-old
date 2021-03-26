@@ -1,10 +1,10 @@
 {
   "name": "Team X",
-  "description": "Test description",
+  "description": "Description aka who we are and history gravida dolor rutrum ultrices semper nulla nisl non. Velit ac, et mattis aliquet. Tortor suscipit bibendum gravida diam nisi dolor. Mauris, mauris donec non ac egestas at lectus vitae. Semper erat ultrices duis dapibus egestas purus auctor lorem. Consectetur fermentum, eget nulla dolor. Gravida dolor rutrum ultrices semper nulla nisl non. Velit ac, et mattis aliquet. Tortor suscipit bibendum gravida diam nisi dolor. Mauris, mauris donec non ac egestas at lectus vitae. Semper erat ultrices duis dapibus egestas purus auctor lorem. Consectetur fermentum, eget nulla dolor. Gravida dolor rutrum ultrices semper nulla nisl non. Velit ac, et mattis aliquet. Tortor suscipit bibendum gravida diam nisi dolor. Mauris, mauris donec non ac egestas at lectus vitae.  ",
   "photo" : "https://i.stack.imgur.com/l60Hf.png",
-  "achievements": ["achievement1",
-                   "achievement2",
-                   "achievement3"],
+  "achievements": ["1999 – Aliquam risus nulla pharetra nunc. Aliquet fermentum, enim et ullamcorper odio tortor",
+                   "2001– Massa tristique blandit augue euismod pellentesque. Vehicula fermentum etiam in vitae non nullam",
+                   "2002– scelerisque velit. Mattis risus eget varius aliquet sollicitudin. Sodales sapien turpis nunc tempor."],
   "players": [
     {
       "name": "Testname1",

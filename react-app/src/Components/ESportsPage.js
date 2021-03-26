@@ -45,10 +45,10 @@ class ESportsPage extends React.Component{
 
     createPlayer(player){
         return(
-            <Card style={{ width: '18rem', color:'white'}} bg={'dark'}>
-                <Card.Title>{player.name}</Card.Title>
-                <Card.Subtitle>{player.role}</Card.Subtitle>
-                <Card.Text>{player.description}</Card.Text>
+            <Card style={{ width: '435px', height: "129px", color:'white', marginBottom: "28px", marginRight: "26px"}} bg={'dark'}>
+                <Card.Title style={{position: "relative", top: "16px", left: "30px", fontWeight: "700"}}>{player.name}</Card.Title>
+                <Card.Subtitle style={{position: "relative", top: "13px", left: "30px", fontSize: "18px"}}>{player.role}</Card.Subtitle>
+                <Card.Text style={{position: "relative", top:"16px", left: "30px", fontSize: "14px"}}>{player.description}</Card.Text>
             </Card>
         )
     }
@@ -61,29 +61,29 @@ class ESportsPage extends React.Component{
 
         return(
             <Container>
-                <Row>
+                <Row style={{marginTop: "143px", position: "relative", right: "20px"}}>
                     <Col>
-                        <h1>{data.name}</h1>
+                        <h1 style={{font: "Futura", fontStyle: "normal", fontWeight: "bold", fontSize: "48", fontWeight: "700", lineHeight: "56px"}}>{data.name}</h1>
                     </Col>
 
                     <Col>
-                        <p>{data.description}</p>
+                        <p style={{font: "Futura", fontSize: "18px", fontWeight: "500", lineHeight: "27px"}}>{data.description}</p>
                     </Col>
                 </Row>
 
                 <br/>
 
-                <Row>
-                    <h3>Recent Achievements</h3>
+                <Row style={{marginTop: "74px"}}>
+                    <h3 style={{font: "Futura", fontWeight:"bold", fontSize: "28px", lineHeight: "36px"}}>Recent Achievements</h3>
                 </Row>
 
                 <Row>
                     <Col>
-                        <img style={{width:435, height:416}} src={data.photo}></img>
+                        <img style={{width:435, height:416, position: "relative", right:"14px"}} src={data.photo}></img>
                     </Col>
 
-                    <Col>
-                        <ul>
+                    <Col style={{marginTop: "155px"}}>
+                        <ul style={{font: "Futura", fontSize: "18px", fontWeight: "500", lineHeight: "27px"}}>
                             {this.achievementsToArray()}
                         </ul>
                     </Col>
@@ -91,8 +91,8 @@ class ESportsPage extends React.Component{
 
                 <br/>
 
-                <Row>
-                    <h3>Players</h3>
+                <Row style={{marginTop: "270px", marginBottom: "16px"}}>
+                    <h3 style={{font: "Futura", fontWeight:"bold", fontSize: "28px", lineHeight: "36px", marginBottom: "16px"}}>Players</h3>
                 </Row>
 
                 <Row>
