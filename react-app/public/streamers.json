@@ -2,7 +2,7 @@
   "data": [
     {
       "name": "HCR321",
-      "game": "Game Name",
+      "game": "RPGs, Puzzles",
       "description": "Hello! My name is HCR321, and I mostly stream RPGs, puzzle-games, and other single-player games with some multiplayer games on the side. I try to keep my streams super chill and casual, and I love to chat about whatever with whoever is watching!",
       "socials": {
         "twitch": "https://www.twitch.tv/hcr321",
@@ -11,9 +11,39 @@
       }
     },
     {
-      "name": "Streamers Name",
-      "game": "Game Name",
-      "description": "Hunter is a senior Archaeology major. His favorite games are fetch and belly rubs.",
+      "name": "SlimGoaty",
+      "game": "Hearthstone, Minecraft",
+      "description": "Hi, my name is William (he/his/him) and my handle is SlimGoaty. I am a third year Electrical and Computer Engineering student, and have been a member of LG since my first year at UT. \nOn stream, I mostly speedrun Dark Souls, but I also enjoy playing Hearthstone, Minecraft, and an FPS every now and then.",
+      "socials": {
+        "twitch": "twitch.tv/slimgoaty",
+        "youtube":"",
+        "twitter": ""
+      }
+    },
+    {
+      "name": "reddyset",
+      "game": "Brawl Stars",
+      "description": "Competitive Brawl Stars gameplay and analysis.",
+      "socials": {
+        "twitch": "twitch.tv/reddyset",
+        "youtube":"",
+        "twitter": "youtube.com/c/reddyset"
+      }
+    },
+    {
+      "name": "lasagna",
+      "game": "Smash Ultimate, League of Legends, Valorant, Rocket League",
+      "description": "Hello! I’m Avinash, and I’m a senior CS student here at UT Austin. I mainly play/stream Smash Ultimate, but I also play a lot of League, Valorant, and Rocket League, among other games. I also love guitar and basketball!",
+      "socials": {
+        "twitch": "https://www.twitch.tv/lasagnassb",
+        "youtube":"",
+        "twitter": "https://twitter.com/lasagnassb"
+      }
+    },
+    {
+      "name": "aaaaaaaaaaaaaaaa",
+      "game": "Titanfall 2",
+      "description": "",
       "socials": {
         "twitch": "",
         "youtube":"",
@@ -21,19 +51,9 @@
       }
     },
     {
-      "name": "Streamers Name",
-      "game": "Game Name",
-      "description": "Hunter is a senior Archaeology major. His favorite games are fetch and belly rubs.",
-      "socials": {
-        "twitch": "",
-        "youtube":"",
-        "twitter": ""
-      }
-    },
-    {
-      "name": "Streamers Name",
-      "game": "Game Name",
-      "description": "Hunter is a senior Archaeology major. His favorite games are fetch and belly rubs.",
+      "name": "scxrlet_ow",
+      "game": "Overwatch, Valorant, Dead by Daylight",
+      "description": "My name is Francis and I am currently a sophomore Computer Science major at UT Austin! My main game is Overwatch, but I have recently branched out into other games such as VALORANT and Dead By Daylight. I love grinding FPS games and improving everyday. I am currently Top 500 at Overwatch (support) and hope to someday get Radiant in VALORANT.",
       "socials": {
         "twitch": "",
         "youtube":"",

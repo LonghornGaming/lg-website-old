@@ -63,7 +63,7 @@ class ESportsPage extends React.Component{
             <Container>
                 <Row style={{marginTop: "143px", position: "relative", right: "20px"}}>
                     <Col>
-                        <h1 style={{font: "Futura", fontStyle: "normal", fontWeight: "bold", fontSize: "48", fontWeight: "700", lineHeight: "56px"}}>{data.name}</h1>
+                        <h1 style={{font: "Futura", fontStyle: "normal", fontWeight: "bold", fontSize: "48", lineHeight: "56px"}}>{data.name}</h1>
                     </Col>
 
                     <Col>

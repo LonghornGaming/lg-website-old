@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Container, Row, Col, Image } from "react-bootstrap";
+import { Card, CardDeck, Container, Row, Col, Image } from "react-bootstrap";
 import ReactPlayer from "react-player";
 import axios from "axios";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
@@ -123,7 +123,6 @@ class Socials extends React.Component {
 
             decks.push(this.createDeck(streamers.slice(i, i + 3)));
         }
-        console.log(decks)
         return decks;
     }
 
@@ -132,7 +131,17 @@ class Socials extends React.Component {
         streamers.forEach(streamer => {
             cols.push(this.createStreamer(streamer));
         });
-        return <Row style={rowStyle}>{cols}</Row>
+
+        let remainder = 0;
+        if(streamers.length < 3)
+            remainder = 3 - streamers.length;
+
+        for(let i = 0; i < remainder; i++){
+            cols.push(
+                <Col><Card style={{visibility:'hidden'}}/></Col>
+            );
+        }
+        return <CardDeck style={rowStyle}>{cols}</CardDeck>
     }
 
     createStreamer(streamer){
@@ -144,12 +153,24 @@ class Socials extends React.Component {
                          icon=<Twitch height="55%" width="55%" />/>
                </Col>
            )
+       } else {
+           icons.push(
+               <Col style={{visibility:'hidden'}}>
+                   <Icon icon=<Twitch height="55%" width="55%"/>/>
+               </Col>
+           )
        }
         if(streamer.socials.youtube !== ""){
             icons.push(
                 <Col>
                     <Icon url={streamer.socials.youtube}
                           icon=<Youtube height="55%" width="55%" />/>
+                </Col>
+            )
+        } else {
+            icons.push(
+                <Col style={{visibility:'hidden'}}>
+                    <Icon icon=<Twitch height="55%" width="55%"/>/>
                 </Col>
             )
         }
@@ -160,10 +181,17 @@ class Socials extends React.Component {
                           icon=<Twitter height="55%" width="55%" />/>
                 </Col>
             )
+        } else {
+            icons.push(
+                <Col style={{visibility:'hidden'}}>
+                    <Icon icon=<Twitch height="55%" width="55%"/>/>
+                </Col>
+            )
         }
+
         return(
-            <Col>
-                <Card>
+
+                <Card style={{width: '18rem'}}>
                     <Card.Body>
                         <Card.Title>{streamer.name}</Card.Title>
                         <Card.Subtitle className="mb-2 text-muted">
@@ -172,10 +200,10 @@ class Socials extends React.Component {
                         <Card.Text>
                             {streamer.description}
                         </Card.Text>
-                        <Row>{icons}</Row>
                     </Card.Body>
+                    <Card.Footer><Row>{icons}</Row></Card.Footer>
                 </Card>
-            </Col>
+
         )
     }
 
