@@ -40,11 +40,11 @@ class NewsletterForm extends React.Component {
             <Row>
                 <Col xs={9}>
                     <Form.Group controlId="formBasicEmail" >
-                        <Form.Control type="email" placeholder="Enter email" onChange={this.handleChange}/>
+                        <Form.Control style ={{position: "relative", right: "64px",height: "65px", width: "899px", backgroundColor:"#D9D9D9", color:"black", font:"Futura", fontSize: "20px"}} type="email" placeholder="Enter email" onChange={this.handleChange}/>
                     </Form.Group>
                 </Col>
                 <Col xs={3}>
-                    <Button variant="primary" type="submit">
+                    <Button style={{position: "relative",backgroundColor: "#202426", borderColor: "#202426", font: "Futura", fontWeight: "500px", fontSize: "20px", lineHeight: "28px", height: "65px", width: "433px", textAlign: "center"}} variant="primary" type="submit">
                         Sign up for our Newsletter
                     </Button>
                 </Col>
