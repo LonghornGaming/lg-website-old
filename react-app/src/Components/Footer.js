@@ -103,7 +103,6 @@ function Footer() {
                     </Col>
                 </Row>
             </Container>
-
         </div>
     );
 }
