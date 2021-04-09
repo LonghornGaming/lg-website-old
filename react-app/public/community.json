@@ -1,0 +1,92 @@
+{
+  "data": [
+    {
+      "image": "./pictures/eGads.png",
+      "socials": {
+        "discord": "https://discord.gg/x26DVKq",
+        "longhorn": "https://discord.gg/x26DVKq",
+        "facebook": "https://discord.gg/x26DVKq",
+        "instagram": "https://discord.gg/x26DVKq"
+      },
+      "name": "EGADs",
+      "description": "Velit ac, et mattis aliquet. Tortor suscipit bibendum gravida diam nisi dolor."
+    },
+    {
+      "image": "./pictures/WiG.png",
+      "socials": {
+        "discord": "https://discord.gg/cXdNwwS",
+        "longhorn": "",
+        "facebook": "",
+        "instagram": ""
+      },
+      "name": "Woman in Gaming",
+      "description": "Velit ac, et mattis aliquet. Tortor suscipit bibendum gravida diam nisi dolor."
+    },
+    {
+      "image": "./pictures/LonghornSmash.png",
+      "socials": {
+        "discord": "https://discord.gg/XjZHjRV",
+        "longhorn": "",
+        "facebook": "",
+        "instagram": ""
+      },
+      "name": "Longhorn Smash",
+      "description": "Velit ac, et mattis aliquet. Tortor suscipit bibendum gravida diam nisi dolor."
+    },
+    {
+      "image": "./pictures/Weeb.png",
+      "socials": {
+        "discord": "https://discord.gg/M4xAbdWAgf",
+        "longhorn": "",
+        "facebook": "",
+        "instagram": ""
+      },
+      "name": "Weeb Club",
+      "description": "Velit ac, et mattis aliquet. Tortor suscipit bibendum gravida diam nisi dolor."
+    },
+    {
+      "image": "./pictures/TXDND.png",
+      "socials": {
+        "discord": "https://discord.gg/hDQ4tVU",
+        "longhorn": "",
+        "facebook": "",
+        "instagram": ""
+      },
+      "name": "Texas DND Club",
+      "description": "Velit ac, et mattis aliquet. Tortor suscipit bibendum gravida diam nisi dolor."
+    },
+    {
+      "image": "./pictures/TableTop.png",
+      "socials": {
+        "discord": "https://discord.gg/YpUZK7j",
+        "longhorn": "",
+        "facebook": "",
+        "instagram": ""
+      },
+      "name": "Texas Tabletop",
+      "description": "Velit ac, et mattis aliquet. Tortor suscipit bibendum gravida diam nisi dolor."
+    },
+    {
+      "image": "./pictures/chess.png",
+      "socials": {
+        "discord": "https://discord.gg/f2eMxzW",
+        "longhorn": "",
+        "facebook": "",
+        "instagram": ""
+      },
+      "name": "UT Chess",
+      "description": "Velit ac, et mattis aliquet. Tortor suscipit bibendum gravida diam nisi dolor."
+    },
+    {
+      "image": "./pictures/tetris.png",
+      "socials": {
+        "discord": "https://discord.gg/brWzaGh",
+        "longhorn": "",
+        "facebook": "",
+        "instagram": ""
+      },
+      "name": "UT Tetris",
+      "description": "Velit ac, et mattis aliquet. Tortor suscipit bibendum gravida diam nisi dolor."
+    }
+  ]
+}

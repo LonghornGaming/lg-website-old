@@ -1,8 +1,9 @@
 import React from "react";
-import { Card, CardDeck, Container, Row, Col, Image } from "react-bootstrap";
+import { Card, CardDeck, CardGroup, Container, Row, Col, Image } from "react-bootstrap";
 import ReactPlayer from "react-player";
 import axios from "axios";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
+import NewsletterForm from './NewsletterForm';
 
 import testImg from "../assets/dog.jpg";
 
@@ -96,13 +97,16 @@ function discInvite() {
 class Socials extends React.Component {
     constructor(props){
         super(props);
-        this.state = { isLoading: true, streamers: undefined };
+        this.state = { isLoading: true, streamers: undefined, communities: undefined };
     }
 
     componentDidMount(){
         axios.get('./streamers.json').then(response => {
-            console.log(response.data);
-            this.setState({isLoading: false, streamers: response.data}) ;
+            this.setState({streamers: response.data}) ;
+        });
+
+        axios.get('./community.json').then(response => {
+            this.setState({isLoading:false, communities: response.data});
         });
     }
 
@@ -121,12 +125,12 @@ class Socials extends React.Component {
         let decks = [];
         for(let i = 0; i < streamers.length; i += 3) {
 
-            decks.push(this.createDeck(streamers.slice(i, i + 3)));
+            decks.push(this.createStreamerDeck(streamers.slice(i, i + 3)));
         }
         return decks;
     }
 
-    createDeck(streamers){
+    createStreamerDeck(streamers){
         let cols = [];
         streamers.forEach(streamer => {
             cols.push(this.createStreamer(streamer));
@@ -191,7 +195,7 @@ class Socials extends React.Component {
 
         return(
 
-                <Card style={{width: '18rem'}}>
+                <Card>
                     <Card.Body>
                         <Card.Title>{streamer.name}</Card.Title>
                         <Card.Subtitle className="mb-2 text-muted">
@@ -207,8 +211,115 @@ class Socials extends React.Component {
         )
     }
 
+    generateCommunities(communities){
+        let decks = [];
+        for(let i = 0; i < communities.length; i += 3) {
+
+            decks.push(this.createCommunitiesDeck(communities.slice(i, i + 3)));
+        }
+        return decks;
+    }
+
+    createCommunitiesDeck(communities){
+        let cols = [];
+        communities.forEach(community => {
+           cols.push(this.createCommunity(community));
+        });
+
+        let remainder = 0;
+        if(communities.length < 3)
+            remainder = 3 - communities.length;
+
+        for(let i = 0; i < remainder; i++){
+            cols.push(
+                <Card style={{visibility:'hidden'}}/>
+            );
+        }
+
+        return <CardDeck style={rowStyle}>{cols}</CardDeck>;
+    }
+
+    createCommunity(community){
+        let icons = [];
+        if(community.socials.discord !== ""){
+            icons.push(
+                <Col>
+                    <Icon url={community.socials.discord}
+                          icon=<Discord height="55%" width="55%" />/>
+                </Col>
+            )
+        } else {
+            icons.push(
+                <Col style={{visibility:'hidden'}}>
+                    <Icon icon=<Twitch height="55%" width="55%"/>/>
+                </Col>
+            )
+        }
+        if(community.socials.longhorn !== ""){
+            icons.push(
+                <Col>
+                    <Icon url={community.socials.longhorn}
+                          icon=<Logo height="55%" width="55%" />/>
+                </Col>
+            )
+        } else {
+            icons.push(
+                <Col style={{visibility:'hidden'}}>
+                    <Icon icon=<Twitch height="55%" width="55%"/>/>
+                </Col>
+            )
+        }
+        if(community.socials.facebook !== ""){
+            icons.push(
+                <Col>
+                    <Icon url={community.socials.facebook}
+                          icon=<Facebook height="55%" width="55%" />/>
+                </Col>
+            )
+        } else {
+            icons.push(
+                <Col style={{visibility:'hidden'}}>
+                    <Icon icon=<Twitch height="55%" width="55%"/>/>
+                </Col>
+            )
+        }
+        if(community.socials.instagram !== ""){
+            icons.push(
+                <Col>
+                    <Icon url={community.socials.twitter}
+                          icon=<Instagram height="55%" width="55%" />/>
+                </Col>
+            )
+        } else {
+            icons.push(
+                <Col style={{visibility:'hidden'}}>
+                    <Icon icon=<Twitch height="55%" width="55%"/>/>
+                </Col>
+            )
+        }
+
+        return(
+
+            <Card>
+                <Row>
+                    <Col xs={4}>
+                        <Card.Img variant="left" src={community.image}/>
+                    </Col>
+                    <Col xs={8}>
+                        <Card.Title>{community.name}</Card.Title>
+                        <Card.Body>
+                            <Card.Text>{community.description}</Card.Text>
+                        </Card.Body>
+                    </Col>
+
+                </Row>
+                <Card.Footer><Row>{icons}</Row></Card.Footer>
+            </Card>
+        )
+    }
+
     render(){
-        const {isLoading, streamers} = this.state;
+        const {isLoading, streamers, communities} = this.state;
 
         if (isLoading) {
             return <div className="App">Loading...</div>;
@@ -219,7 +330,7 @@ class Socials extends React.Component {
 
                 <h1 style={{marginTop: "163px", marginLeft: "25px", marginBottom: "50px"}}> Welcome to LG's Socials Page!</h1>
                 <p1 style={{marginTop: "56px", marginLeft: "27px"}} >stay connected w the coolest</p1>
-                <Container style={{marginTop: "25px"}}>
+
                     <Row style={{marginTop: "84px", marginBottom: "64px"}}>
                         {this.generateIcons(icons)}
                     </Row>
@@ -246,21 +357,24 @@ class Socials extends React.Component {
                     </Row>
 
                     <Row style={{marginTop:"60px", marginBottom:"100px"}}>
-                        <form>
-                            <input type="text" size="106" placeholder="  Enter your email here" />
-                        </form>
-                        <button type="button" style={{marginLeft: "15px", paddingLeft:"40px", paddingRight:"40px"}}>
-                            Sign up for our newsletter!
-                        </button>
+                        <NewsletterForm/>
                     </Row>
 
                     <Row style={{marginBottom: "20px"}}>
                         <h2>Streamers</h2>
                     </Row>
 
-                    {this.generateStreamers(streamers.data)}
+                    <Row style={{marginBottom: "20px"}}>
+                        {this.generateStreamers(streamers.data)}
+                    </Row>
 
-                </Container>
+                    <Row style={{marginBottom: "20px"}}>
+                        <h2>Community Showcase</h2>
+                    </Row>
+                    
+                    <Row style={{marginBottom: "20px"}}>
+                        {this.generateCommunities(communities.data)}
+                    </Row>
             </Container>
         );
     }
