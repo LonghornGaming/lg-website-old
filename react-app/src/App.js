@@ -18,11 +18,14 @@ import Home from "./Components/Home";
 import Socials from "./Components/Socials";
 import Blog from "./Components/Blog";
 import ESportsPage from "./Components/ESportsPage";
+import Communities from "./Components/Communities";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import logo from "./assets/LGWhiteLogo.png";
 
 import Footer from "./Components/Footer";
+import CommunityPage from "./Components/CommunityPage";
+
 
 function HoverControlledDropdown(props) {
     const [isHovered, setIsHovered] = useState(false);
@@ -53,7 +56,7 @@ function App() {
                         <NavDropdown.Item href="eSports">
                             eSports
                         </NavDropdown.Item>
-                        <NavDropdown.Item href="eSports">
+                        <NavDropdown.Item href="communities">
                             Communities
                         </NavDropdown.Item>
                     </HoverControlledDropdown>
@@ -75,6 +78,9 @@ function App() {
                 </Route>
                 <Route exact path="/esports">
                     <ESports />
+                </Route>
+                <Route exact path="/communities">
+                    <Communities />
                 </Route>
                 <Route exact path="/home">
                     <Home />
@@ -99,6 +105,9 @@ function App() {
                 </Route>
                 <Route exact path="/esport">
                     <ESportsPage />
+                </Route>
+                <Route exact path="/community">
+                    <CommunityPage/>
                 </Route>
                 <Redirect to="/404"></Redirect>
             </Switch>
