@@ -22,14 +22,23 @@ const rowStyle = {
     paddingBottom: "20px",
 };
 
+const accordionStyle = {
+    width: "100%",
+    paddingLeft: "35%",
+};
+
+const toggleStyle = {
+    background: "black",
+    color: "white",
+};
+
 function AccordianCard(props) {
     return (
         <Card>
-            <Card.Header>
-                <Accordion.Toggle as={Card.Header} eventKey={props.event}>
-                    {props.title}
-                </Accordion.Toggle>
-            </Card.Header>
+            <Accordion.Toggle as={Card.Header} eventKey={props.event} style={toggleStyle}>
+                {props.title}
+            </Accordion.Toggle>
+            
             <Accordion.Collapse eventKey={props.event}>
                 <Card.Body>{props.body}</Card.Body>
             </Accordion.Collapse>
@@ -183,7 +192,7 @@ class About extends React.Component {
                     <h1>About LG</h1>
                 </Row>
 
-                <Accordion>
+                <Accordion style={accordionStyle}>
                     <AccordianCard
                         title="We are..."
                         body="Longhorn Gaming aims to connect gamers of any and all backgrounds, redefine negative stigmas of the gaming community, and support the future generation of the gaming industry. Our organization plans to accomplish this by fostering a community united by a passion for video games while also building a foundation for them to pursue and realize their passions within the gaming community, from esports to content creation, and much more. We hope to cater to casual and competitive gamers alike and as well as support and embrace exploration of the many paths you can find throughout the gaming industry."
