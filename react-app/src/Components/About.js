@@ -54,7 +54,6 @@ class About extends React.Component {
     }
 
     createOfficers(officers){
-        console.log(officers);
         let decks = [];
         for(let i = 0; i < officers.length; i += 3) {
 
@@ -183,6 +182,7 @@ class About extends React.Component {
                 <Row style={rowStyle}>
                     <h1>About LG</h1>
                 </Row>
+
                 <Accordion>
                     <AccordianCard
                         title="We are..."
