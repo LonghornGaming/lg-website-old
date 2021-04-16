@@ -11,10 +11,13 @@ import {TwitterTimelineEmbed} from "react-twitter-embed";
 
 const { calKey, calID } = require('../keys.js');
 const styles = {
+    p: {
+        fontSize: "50px"
+    },
     paddingTop:    '200px',
     paddingBottom: '200px',
-
-    backgroundImage:    'url(' + images.utlandscape + ')',
+    borderRadius: '0px',
+    backgroundImage:    'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(' + images.utlandscape + ')',
     backgroundPosition: 'center center',
     backgroundRepeat:   'no-repeat',
     backgroundSize:     'cover',
