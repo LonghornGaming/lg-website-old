@@ -49,15 +49,12 @@ function App() {
                 <Nav>
                     <Nav.Link href="home">Home</Nav.Link>
                     <Nav.Link href="about">About</Nav.Link>
-                    <HoverControlledDropdown href="eSports" title="eSports">
-                        <NavDropdown.Item href="about">
-                            Action
+                    <HoverControlledDropdown title="Games">
+                        <NavDropdown.Item href="eSports">
+                            eSports
                         </NavDropdown.Item>
-                        <NavDropdown.Item href="events">
-                            Another action
-                        </NavDropdown.Item>
-                        <NavDropdown.Item href="socials">
-                            Something
+                        <NavDropdown.Item href="eSports">
+                            Communities
                         </NavDropdown.Item>
                     </HoverControlledDropdown>
                     <Nav.Link href="events">Events</Nav.Link>
