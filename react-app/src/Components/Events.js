@@ -9,7 +9,7 @@ const { calKey, calID } = require("../keys.js");
 const jumboStyle = {
     paddingTop: "200px",
     paddingBottom: "200px",
-
+    borderRadius: '0px',
     backgroundImage: "url(" + images.eventsLandscape + ")",
     backgroundPosition: "center center",
     backgroundRepeat: "no-repeat",

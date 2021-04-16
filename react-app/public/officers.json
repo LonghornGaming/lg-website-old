@@ -1,0 +1,30 @@
+{
+  "advisors": [
+    {
+      "image": "https://www.nacdnet.org/wp-content/uploads/2016/06/person-placeholder.jpg",
+      "name": "Hunter",
+      "role": "President",
+      "description": "Hunter is a senior Archaeology major. His favorite games are fetch and belly rubs.",
+      "socials": {
+        "linkedin": "https://www.linkedin.com",
+        "twitter": "https://www.twitter.com"
+      }
+    },
+    {
+      "image": "https://www.nacdnet.org/wp-content/uploads/2016/06/person-placeholder.jpg",
+      "name": "Hunter",
+      "role": "Vice President",
+      "description": "Hunter is a senior Archaeology major. His favorite games are fetch and belly rubs.",
+      "socials": {
+        "linkedin": "",
+        "twitter": ""
+      }
+    }
+  ],
+  "cabinet": [
+
+  ],
+  "directors": [
+
+  ]
+}
