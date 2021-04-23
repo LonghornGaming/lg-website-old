@@ -313,7 +313,7 @@ class About extends React.Component {
                             <dd>- Every team in our crew is responsible for creating value for Longhorn Gaming, our partners, and our members; Public Relations is responsible for communicating that value. We are in charge of LG's social media platforms, marketing campaigns, conflict management, and sponsor relationships. </dd>
 
                             <dt>Web Development</dt>
-                            <dd>- The web dev team manages the development of the Longhorn Gaming website (https://longhorngaming.gg).</dd>
+                            <dd>- The web dev team manages the development of the Longhorn Gaming website <a href="https://longhorngaming.gg">https://longhorngaming.gg</a>.</dd>
                         </dl>
                     </Col>
                     <Col sm={4}>

@@ -35,7 +35,7 @@ const showcaseStyle = {
 function Icon(props) {
     
     return (
-        <a href={props.url} target="_blank" rel="noreferrer">
+        <a style={{display: 'flex', justifyContent: 'center'}} href={props.url} target="_blank" rel="noreferrer">
             {props.icon}
         </a>
     );
@@ -286,7 +286,7 @@ class Socials extends React.Component {
         if(community.socials.instagram !== ""){
             icons.push(
                 <Col>
-                    <Icon url={community.socials.twitter}
+                    <Icon url={community.socials.instagram}
                           icon=<Instagram height="55%" width="55%" />/>
                 </Col>
             )
@@ -306,8 +306,8 @@ class Socials extends React.Component {
                         <Card.Img variant="left" src={community.image}/>
                     </Col>
                     <Col xs={8}>
-                        <Card.Title>{community.name}</Card.Title>
                         <Card.Body>
+                            <Card.Title>{community.name}</Card.Title>
                             <Card.Text>{community.description}</Card.Text>
                         </Card.Body>
                     </Col>
@@ -356,7 +356,7 @@ class Socials extends React.Component {
                         </Col>
                     </Row>
 
-                    <Row style={{marginTop:"60px", marginBottom:"100px"}}>
+                    <Row style={{marginTop:"60px", marginBottom:"60px"}}>
                         <NewsletterForm/>
                     </Row>
 
