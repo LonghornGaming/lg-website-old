@@ -1,19 +1,54 @@
 import React from 'react';
-import {Card, CardDeck, Container} from "react-bootstrap"
+import {Card, CardDeck, Container, Jumbotron, Row, Col} from "react-bootstrap"
 import {Link } from 'react-router-dom';
 
 import images from '../assets/images';
 
 var cardStyle = {
-
     width: '18rem'
-
 }
+const jumboStyle = {
+    paddingTop: "200px",
+    paddingBottom: "200px",
+    borderRadius: '0px',
+    backgroundColor: '#202426',
+    backgroundPosition: "center center",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+};
+
+const jumboHeader = {
+    color: 'white',
+    display: 'inline',
+};
+
+const jumboText = {
+    color: 'white',
+    display: 'inline',
+    verticalAlign: 'middle',
+    
+    
+};
 
 function ESports() {
     return (
         <div>
-            <h1>Welcome to LG's Esports Page!</h1>
+
+            <Jumbotron style={jumboStyle}>
+            
+            <Row style={{width: '80%'}}>
+                <Col style={{textAlign: 'right'}}>
+                    <h1 style={jumboHeader}>History of Esports</h1>
+                </Col>
+                <Col style={{paddingLeft: '50px'}}>
+                    <p style={jumboText}>
+                        Longhorn Gaming provides access to a wide variety of events. Longhorn gaming itself runs weekly game nights, primarily including party games such as jackbox, skribbl.io, and broken picturephone. Longhorn gaming also hosts a bigger event every month. These events can include but are not limited to LAN parties, Larger tournaments, and fundraisers, and often include collaboration with other student organizations and sponsorships from companies in the gaming industry such as Riot. Additionally, Longhorn Gaming offers connections to our communities where Game Ambassadors, the head representative of their communities, run events in relation to their game about once a month. Finally, members of the LG Family system get access to additional biweekly family game nights, where LG families compete for points. 
+                    </p>
+                </Col>
+            </Row> 
+            </Jumbotron>
+            
+                        
             <Container>
 
             <CardDeck>
