@@ -18,5 +18,9 @@
     }
   ],
   "tryout": "Tryouts here",
-  "communities": "Communities here"
+  "communities": "Communities here",
+  "calendar": {
+    "calID": "longhorngaming.gg_biorbbnr3sg9jciq876j2vsnss@group.calendar.google.com",
+    "calKey": "AIzaSyDWa_GxfQMPx3Ice2U7p8Si3W8Ajzar4OA"
+  }
 }

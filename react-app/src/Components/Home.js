@@ -3,7 +3,7 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 
 import Calendar from '@ericz1803/react-google-calendar';
 
-import { Image, Container, Row, Col, Button, Grid, Card} from "react-bootstrap";
+import {Container, Row, Col, Button, Card} from "react-bootstrap";
 import images from "../assets/images.js";
 import NewsletterForm from './NewsletterForm';
 import ReactPlayer from "react-player";

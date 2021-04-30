@@ -25,6 +25,7 @@ import logo from "./assets/LGWhiteLogo.png";
 
 import Footer from "./Components/Footer";
 import CommunityPage from "./Components/CommunityPage";
+import MegaMenu from "./Components/MegaMenu"
 
 
 function HoverControlledDropdown(props) {
@@ -60,7 +61,6 @@ function App() {
                             Communities
                         </NavDropdown.Item>
                     </HoverControlledDropdown>
-                    <Nav.Link href="events">Events</Nav.Link>
                     <Nav.Link href="blogs">Blogs</Nav.Link>
                     <Nav.Link href="socials">Socials</Nav.Link>
                     <Nav.Link
@@ -71,6 +71,8 @@ function App() {
                     </Nav.Link>
                 </Nav>
             </NavBar>
+
+            <MegaMenu/>
 
             <Switch>
                 <Route exact path="/about">
@@ -84,9 +86,6 @@ function App() {
                 </Route>
                 <Route exact path="/home">
                     <Home />
-                </Route>
-                <Route exact path="/events">
-                    <Events />
                 </Route>
                 <Route exact path="/blogs">
                     <Blogs />

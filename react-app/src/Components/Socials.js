@@ -32,6 +32,11 @@ const showcaseStyle = {
     height: 203
 }
 
+const iconStyle = {
+    marginTop: "auto",
+    marginBottom: "auto"
+}
+
 function Icon(props) {
     
     return (
@@ -114,7 +119,7 @@ class Socials extends React.Component {
         let o = [];
         icons.forEach(icon => {
             o.push(
-                <Col>
+                <Col style={iconStyle}>
                     <Icon url={icon.url} icon={icon.icon}/>
                 </Col>)
         });
@@ -166,7 +171,8 @@ class Socials extends React.Component {
        }
         if(streamer.socials.youtube !== ""){
             icons.push(
-                <Col>
+                //Center Youtube icon be because its weird
+                <Col style={iconStyle}>
                     <Icon url={streamer.socials.youtube}
                           icon=<Youtube height="55%" width="55%" />/>
                 </Col>
@@ -180,7 +186,8 @@ class Socials extends React.Component {
         }
         if(streamer.socials.twitter !== ""){
             icons.push(
-                <Col>
+                //Twitter icon is also not centered
+                <Col style={iconStyle}>
                     <Icon url={streamer.socials.twitter}
                           icon=<Twitter height="55%" width="55%" />/>
                 </Col>
@@ -195,7 +202,7 @@ class Socials extends React.Component {
 
         return(
 
-                <Card>
+                <Card bg='dark' text='white'>
                     <Card.Body>
                         <Card.Title>{streamer.name}</Card.Title>
                         <Card.Subtitle className="mb-2 text-muted">
@@ -257,7 +264,7 @@ class Socials extends React.Component {
         }
         if(community.socials.longhorn !== ""){
             icons.push(
-                <Col>
+                <Col style={iconStyle}>
                     <Icon url={community.socials.longhorn}
                           icon=<Logo height="55%" width="55%" />/>
                 </Col>
@@ -329,7 +336,7 @@ class Socials extends React.Component {
             <Container>
 
                 <h1 style={{marginTop: "163px", marginLeft: "25px", marginBottom: "50px"}}> Welcome to LG's Socials Page!</h1>
-                <p1 style={{marginTop: "56px", marginLeft: "27px"}} >stay connected w the coolest</p1>
+                <p1 style={{marginTop: "56px", marginLeft: "27px"}} >stay connected w/ the coolest</p1>
 
                     <Row style={{marginTop: "84px", marginBottom: "64px"}}>
                         {this.generateIcons(icons)}

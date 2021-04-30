@@ -1,6 +1,7 @@
 import React from "react";
 import axios from 'axios';
 import {Container, Row, Col, Card, CardDeck} from 'react-bootstrap';
+import Calendar from '@ericz1803/react-google-calendar';
 
 class ESportsPage extends React.Component{
     constructor(props) {
@@ -98,6 +99,10 @@ class ESportsPage extends React.Component{
                 <Row>
                     {this.createDecks(data.players)}
                 </Row>
+
+                <br/>
+
+                <Calendar calendarId={data.calendar.calID} apiKey={data.calendar.calKey}/>
 
                 <br/>
 
